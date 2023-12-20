@@ -13,55 +13,75 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
-
-// react-router components
-import { useLocation, Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props.
-import PropTypes from "prop-types";
-
-// @material-ui core components
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Menu from "@mui/material/Menu";
-import Icon from "@mui/material/Icon";
-
-// Soft UI Dashboard React components
-import SoftBox from "components/SoftBox";
-import SoftTypography from "components/SoftTypography";
-import SoftInput from "components/SoftInput";
-
-// Soft UI Dashboard React examples
-import Breadcrumbs from "examples/Breadcrumbs";
-import NotificationItem from "examples/Items/NotificationItem";
-
-import { useAuth } from "../../../auth-context/auth.context";
-
-// Custom styles for DashboardNavbar
+import { Link, useLocation } from "react-router-dom";
 import {
   navbar,
   navbarContainer,
-  navbarRow,
   navbarIconButton,
   navbarMobileMenu,
+  navbarRow,
 } from "examples/Navbars/DashboardNavbar/styles";
-
-// Soft UI Dashboard React context
 import {
-  useSoftUIController,
-  setTransparentNavbar,
   setMiniSidenav,
   setOpenConfigurator,
+  setTransparentNavbar,
+  useSoftUIController,
 } from "context";
+import { useEffect, useState } from "react";
+
+import AppBar from "@mui/material/AppBar";
+import AuthApi from "../../../api/auth";
+import Breadcrumbs from "examples/Breadcrumbs";
+import Icon from "@mui/material/Icon";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import NotificationItem from "examples/Items/NotificationItem";
+import PropTypes from "prop-types";
+import SoftBox from "components/SoftBox";
+import SoftInput from "components/SoftInput";
+import SoftTypography from "components/SoftTypography";
+import Toolbar from "@mui/material/Toolbar";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import team2 from "assets/images/team-2.jpg";
+import { useAuth } from "../../../auth-context/auth.context";
+import { useNavigate } from "react-router-dom";
+
+// react-router components
+
+
+// prop-types is a library for typechecking of props.
+
+
+// @material-ui core components
+
+
+
+
+
+
+// Soft UI Dashboard React components
+
+
+
+
+// Soft UI Dashboard React examples
+
+
+
+
+
+// Custom styles for DashboardNavbar
+
+
+// Soft UI Dashboard React context
+
 
 // Images
-import team2 from "assets/images/team-2.jpg";
-import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 
-import AuthApi from "../../../api/auth";
-import { useNavigate } from "react-router-dom";
+
+
+
+
 
 function DashboardNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();

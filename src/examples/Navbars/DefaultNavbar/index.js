@@ -13,29 +13,40 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-// react-router components
-import { Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props.
-import PropTypes from "prop-types";
-
-// @mui material components
 import Container from "@mui/material/Container";
-import Icon from "@mui/material/Icon";
-
-// Soft UI Dashboard React components
-import SoftBox from "components/SoftBox";
-import SoftTypography from "components/SoftTypography";
-import SoftButton from "components/SoftButton";
-
-// Soft UI Dashboard React examples
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
+import Icon from "@mui/material/Icon";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import SoftBox from "components/SoftBox";
+import SoftButton from "components/SoftButton";
+import SoftTypography from "components/SoftTypography";
+import breakpoints from "assets/theme/base/breakpoints";
+
+// react-router components
+
+
+// prop-types is a library for typechecking of props.
+
+
+// @mui material components
+
+
+
+// Soft UI Dashboard React components
+
+
+
+
+// Soft UI Dashboard React examples
+
+
 
 // Soft UI Dashboard React base styles
-import breakpoints from "assets/theme/base/breakpoints";
+
 
 function DefaultNavbar({ transparent, light, action }) {
   const [mobileNavbar, setMobileNavbar] = useState(false);
@@ -93,7 +104,7 @@ function DefaultNavbar({ transparent, light, action }) {
       >
         <SoftBox component={Link} to="/" py={transparent ? 1.5 : 0.75} lineHeight={1}>
           <SoftTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-            Soft UI Dashboard
+            BOmBzOO's Trading System
           </SoftTypography>
         </SoftBox>
         <SoftBox color="inherit" display={{ xs: "none", lg: "flex" }} m={0} p={0}>

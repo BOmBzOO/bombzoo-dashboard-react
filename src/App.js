@@ -13,41 +13,58 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect, useMemo } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { setMiniSidenav, setOpenConfigurator, useSoftUIController } from "context";
+import { useEffect, useMemo, useState } from "react";
 
-// react-router components
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-
-// @mui material components
-import { ThemeProvider } from "@mui/material/styles";
+import { CacheProvider } from "@emotion/react";
+import Configurator from "examples/Configurator";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
-
-// Soft UI Dashboard React components
-import SoftBox from "components/SoftBox";
-
-// Soft UI Dashboard React examples
+import { ProtectedRoute } from "./ProtectedRoute";
 import Sidenav from "examples/Sidenav";
-import Configurator from "examples/Configurator";
-
-// Soft UI Dashboard React themes
+import SoftBox from "components/SoftBox";
+import { ThemeProvider } from "@mui/material/styles";
+import brand from "assets/images/logo-ct.png";
+import createCache from "@emotion/cache";
+import routes from "./routes";
+import rtlPlugin from "stylis-plugin-rtl";
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
 
+// react-router components
+
+
+// @mui material components
+
+
+
+
+// Soft UI Dashboard React components
+
+
+// Soft UI Dashboard React examples
+
+
+
+// Soft UI Dashboard React themes
+
+
+
 // RTL plugins
-import rtlPlugin from "stylis-plugin-rtl";
-import { CacheProvider } from "@emotion/react";
-import createCache from "@emotion/cache";
+
+
+
 
 // Soft UI Dashboard React routes
-import routes from "./routes";
-import { ProtectedRoute } from "./ProtectedRoute";
+
+
 
 // Soft UI Dashboard React contexts
-import { useSoftUIController, setMiniSidenav, setOpenConfigurator } from "context";
+
 
 // Images
-import brand from "assets/images/logo-ct.png";
+
 
 export default function App() {
   const [controller, dispatch] = useSoftUIController();
@@ -98,6 +115,7 @@ export default function App() {
 
   const getRoutes = (allRoutes) =>
     allRoutes.map((route) => {
+      console.log(allRoutes)
       if (route.collapse) {
         return getRoutes(route.collapse);
       }
@@ -149,7 +167,7 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand={brand}
-              brandName="Soft UI Dashboard"
+              brandName="BOmBzOO's Trading"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
@@ -173,7 +191,7 @@ export default function App() {
           <Sidenav
             color={sidenavColor}
             brand={brand}
-            brandName="Soft UI Dashboard"
+            brandName="BOmBzOO's Trading"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}

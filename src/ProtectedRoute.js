@@ -1,11 +1,15 @@
+import { Outlet, useNavigate } from 'react-router-dom';
+
 import React from "react";
-import { useAuth } from './auth-context/auth.context';
-import { useNavigate, Outlet } from 'react-router-dom';
 import SweetAlert from "react-bootstrap-sweetalert";
+import { useAuth } from './auth-context/auth.context';
 
 export const ProtectedRoute = () => {
   const navigate = useNavigate();
   let { user } = useAuth();
+
+  console.log('protected log:', user)
+  
     return (<>
       {(!user || !user.token || user.token === "") ? (
         <SweetAlert

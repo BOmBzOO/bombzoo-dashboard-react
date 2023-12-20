@@ -14,15 +14,19 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
-
-// Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
+import ivancik from "assets/images/ivancik.jpg";
+
+// Soft UI Dashboard React components
+
+
 
 // Images
-import ivancik from "assets/images/ivancik.jpg";
+
 
 function WorkWithTheRockets() {
   return (
@@ -46,13 +50,15 @@ function WorkWithTheRockets() {
         >
           <SoftBox mb={3} pt={1}>
             <SoftTypography variant="h5" color="white" fontWeight="bold">
-              Work with the rockets
+              트레이딩 시스템의 주요 스펙
             </SoftTypography>
           </SoftBox>
           <SoftBox mb={2}>
             <SoftTypography variant="body2" color="white">
-              Wealth creation is an evolutionarily recent positive-sum game. It is all about who
-              take the opportunity first.
+              <li>마켓 데이터 수집: 한국투자증권 API, DART</li>
+              <li>백테스팅 프로그램 : Modified Quantopian Package</li>
+              <li>웹프레임워크: FastAPI, React</li>
+
             </SoftTypography>
           </SoftBox>
           <SoftTypography

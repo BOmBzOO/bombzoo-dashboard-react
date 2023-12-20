@@ -15,29 +15,29 @@ Coded by www.creative-tim.com
 
 const reportsBarChartData = {
   chart: {
-    labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: { label: "Sales", data: [450, 200, 100, 220, 500, 100, 400, 230, 500] },
+    labels: ["4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    datasets: { label: "월별수익률", data: [450, 200, 100, 220, 500, 100, 400, 230, 500] },
   },
   items: [
     {
       icon: { color: "primary", component: "library_books" },
-      label: "users",
-      progress: { content: "36K", percentage: 60 },
+      label: "거래대금",
+      progress: { content: "~1억원", percentage: 60 },
     },
     {
       icon: { color: "info", component: "touch_app" },
-      label: "clicks",
-      progress: { content: "2M", percentage: 90 },
+      label: "거래횟수",
+      progress: { content: "2000회", percentage: 90 },
     },
     {
       icon: { color: "warning", component: "payment" },
-      label: "sales",
-      progress: { content: "$435", percentage: 30 },
+      label: "거래세",
+      progress: { content: "~50만원", percentage: 30 },
     },
     {
       icon: { color: "error", component: "extension" },
-      label: "items",
-      progress: { content: "43", percentage: 50 },
+      label: "수익성공횟수",
+      progress: { content: "43회", percentage: 50 },
     },
   ],
 };

@@ -13,23 +13,31 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
-
-// @mui material components
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-
-// Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
+import Table from "examples/Tables/Table";
+import data from "layouts/dashboard/components/Projects/data";
+import { useState } from "react";
+
+// @mui material components
+
+
+
+
+
+// Soft UI Dashboard React components
+
+
 
 // Soft UI Dashboard Materail-UI example components
-import Table from "examples/Tables/Table";
+
 
 // Data
-import data from "layouts/dashboard/components/Projects/data";
+
 
 function Projects() {
   const { columns, rows } = data();
@@ -64,7 +72,7 @@ function Projects() {
       <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
         <SoftBox>
           <SoftTypography variant="h6" gutterBottom>
-            Projects
+            보유주식 상세
           </SoftTypography>
           <SoftBox display="flex" alignItems="center" lineHeight={0}>
             <Icon
@@ -77,7 +85,7 @@ function Projects() {
               done
             </Icon>
             <SoftTypography variant="button" fontWeight="regular" color="text">
-              &nbsp;<strong>30 done</strong> this month
+              &nbsp;<strong>총 30주식 보유</strong> 2023년 12월 20일
             </SoftTypography>
           </SoftBox>
         </SoftBox>

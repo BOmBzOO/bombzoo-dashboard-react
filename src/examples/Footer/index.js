@@ -14,18 +14,24 @@ Coded by www.creative-tim.com
 */
 
 // prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
 
-// @mui material components
-import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
-
-// Soft UI Dashboard React components
+import Link from "@mui/material/Link";
+import PropTypes from "prop-types";
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
+import typography from "assets/theme/base/typography";
+
+// @mui material components
+
+
+
+// Soft UI Dashboard React components
+
+
 
 // Soft UI Dashboard React base styles
-import typography from "assets/theme/base/typography";
+
 
 function Footer({ company, links }) {
   const { href, name } = company;
@@ -66,7 +72,7 @@ function Footer({ company, links }) {
             &nbsp;{name}&nbsp;
           </SoftTypography>
         </Link>
-        - Coded by AppSeed.
+        - All right reserved with BOmBzOO.
       </SoftBox>
       <SoftBox
         component="ul"

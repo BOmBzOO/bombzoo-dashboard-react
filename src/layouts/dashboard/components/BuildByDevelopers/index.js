@@ -14,17 +14,22 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
-
-// Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
 import SoftTypography from "components/SoftTypography";
+import rocketWhite from "assets/images/illustrations/rocket-white.png";
+import wavesWhite from "assets/images/shapes/waves-white.svg";
+
+// Soft UI Dashboard React components
+
+
 
 // Images
-import wavesWhite from "assets/images/shapes/waves-white.svg";
-import rocketWhite from "assets/images/illustrations/rocket-white.png";
+
+
 
 function BuildByDevelopers() {
   return (
@@ -35,16 +40,17 @@ function BuildByDevelopers() {
             <SoftBox display="flex" flexDirection="column" height="100%">
               <SoftBox pt={1} mb={0.5}>
                 <SoftTypography variant="body2" color="text" fontWeight="medium">
-                  Build by developers
+                  AI Intraday Trading
                 </SoftTypography>
               </SoftBox>
               <SoftTypography variant="h5" fontWeight="bold" gutterBottom>
-                Soft UI Dashboard
+                인공지능(AI)을 이용한 자동매매 시스템
               </SoftTypography>
               <SoftBox mb={6}>
                 <SoftTypography variant="body2" color="text">
-                  From colors, cards, typography to complex elements, you will find the full
-                  documentation.
+                  <li>머신러닝 기반 알고리즘 개발과 검증</li> 
+                  <li>장중 마켓데이터의 실시간 수집과 분석</li> 
+                  <li>API를 이용한 장중 실시간 트레이딩</li> 
                 </SoftTypography>
               </SoftBox>
               <SoftTypography

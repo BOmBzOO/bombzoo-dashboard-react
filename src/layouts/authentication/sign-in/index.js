@@ -13,31 +13,46 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
-import { RotatingLines } from "react-loader-spinner";
-// react-router-dom components
 import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-// @mui material components
-import Switch from "@mui/material/Switch";
-
-// Soft UI Dashboard React components
-import SoftBox from "components/SoftBox";
-import SoftTypography from "components/SoftTypography";
-import SoftInput from "components/SoftInput";
-import SoftButton from "components/SoftButton";
-
-// Authentication layout components
+import { API_SERVER } from "config/constant";
+import AuthApi from "../../../api/auth";
 import CoverLayout from "layouts/authentication/components/CoverLayout";
 import GithubSocial from "layouts/authentication/components/Socials/github";
+import { RotatingLines } from "react-loader-spinner";
 import Separator from "layouts/authentication/components/Separator";
+import SoftBox from "components/SoftBox";
+import SoftButton from "components/SoftButton";
+import SoftInput from "components/SoftInput";
+import SoftTypography from "components/SoftTypography";
+import Switch from "@mui/material/Switch";
+import curved9 from "assets/images/curved-images/curved-6.jpg";
+import { useAuth } from "../../../auth-context/auth.context";
+
+// react-router-dom components
+
+
+// @mui material components
+
+
+// Soft UI Dashboard React components
+
+
+
+
+
+// Authentication layout components
+
+
+
 
 // Images
-import curved9 from "assets/images/curved-images/curved-6.jpg";
 
-import AuthApi from "../../../api/auth";
-import { useAuth } from "../../../auth-context/auth.context";
-import { API_SERVER } from "config/constant";
+
+
+
+
 
 function SignIn() {
   const navigate = useNavigate();
